@@ -1,0 +1,48 @@
+
+h1 {
+	font-size:40px;
+	text-align:center;
+}
+h2 {
+	font-size:30px;
+	text-align:center;
+}
+h3 {
+	font-size:20px;
+	font-style:italic;
+	text-align:center;
+}
+h4 {
+	font-size:16px;
+	font-style:bold;
+	text-align:center;
+}
+p {
+	font-size:14px;
+	margin-left:auto;
+	margin-right:auto;
+}
+code {
+	font-family:"Courier New", Courier, monospace;
+	color: #222222;
+	background-color: #DEDEDE;
+}
+tt {
+	font-family:"Courier New", Courier, monospace;
+	color: #000000;
+}
+img {
+	float:left;
+	margin: 0 15px 15px 0;
+	padding: 5px;
+	border: 1px solid #aaa;
+}
+.right {
+	float:right;
+}
+ul {
+	font-size:14px;	
+	max-width:700px;
+	margin-left:auto;
+	margin-right:auto;
+}

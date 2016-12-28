@@ -1,0 +1,51 @@
+		CMPUT 229 Laboratory Assignment #1
+		==================================
+
+Final Mark:           /100 MARKS TOTAL
+                =====
+Part 1:         _____ /40 Questions
+
+Part 2:         _____ /20 Bugfixes
+
+Part 3:         _____ /20 Program
+
+Part 4:		_____ /15 Program Style
+
+-------------------------------------------------------------------------
+Part 1: Questions
+
+ _____ /40
+
+Question 1 ____ /4 Question 2 ____ /4 Question 3 ____ /4
+
+Question 4 ____ /4 Question 5 ____ /4 Question 6 ____ /4
+
+Question 7 ____ /4 Question 8 ____ /4 Question 9 ____ /4
+
+Question 10 ____ /4
+
+------------------------------------------------------------------------
+Part 2: Bugfixes
+
+
+ _____ /20
+
+------------------------------------------------------------------------
+Part 3: Program
+
+ _____ /20
+
+4 test cases of main method
+	Test 1 ____ /5 Test 2 ____ /5 Test 3 ____ /5 Test 4 ____ /5
+      
+------------------------------------------------------------------------
+Part 4: Program Style
+
+ _____ /20
+ 
+Some common deductions will include: (5 marks per deduction)
+	No subroutine description
+	No program header
+	No explanation for register usage
+	No block comments
+

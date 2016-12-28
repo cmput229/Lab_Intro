@@ -1,0 +1,102 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+
+\useinnertheme{rectangles}
+\useoutertheme{infolines}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+
+\title{Debugging in SPIM}
+\author[CMPUT 229]{CMPUT 229}
+\institute{University of Alberta}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+
+\frame{
+  \frametitle{Outline}
+  \tableofcontents
+}
+
+\section{Debugging Programs}
+
+\frame{
+  \frametitle{How Do You Debug?}
+
+  \pause
+
+  \begin{itemize}
+    \item Breakpoints
+    \item Single-stepping
+    \item Inspecting variable values
+  \end{itemize}
+}
+
+\section{SPIM Debugging Features}
+
+\frame{
+  \frametitle{Breakpoints in SPIM}
+
+  \begin{itemize}
+    \item Can only set breakpoints by address or global symbol name.
+      \begin{itemize}
+        \item You can make symbols in your program global using the
+          \texttt{.globl} directive. 
+      \end{itemize}
+    \item Look up the address of the instruction you want to break on in the
+      \texttt{Text Segments} pane in XSPIM.
+    \item See all the global symbols by choosing \texttt{global symbols} in the
+      \texttt{print} menu in XSPIM.
+    \item Use the \texttt{p(rint)} command to show instructions in SPIM.
+    \item Use the \texttt{print\_symbols} command to show global symbols in SPIM.
+
+    \item Set a breakpoint using the \texttt{breakpoints} button in XSPIM, or
+      the \texttt{breakpoint} command in SPIM.
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Stepping in SPIM}
+
+  \begin{itemize}
+    \item Click \texttt{step} and enter the number of instructions to execute in
+      XSPIM.
+    \item Use the \texttt{s(tep)} command in SPIM.
+      \begin{itemize}
+        \item Just hit enter to repeat the last command -- handy when
+          single-stepping.
+      \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Value Inspection in SPIM}
+  
+  \begin{itemize}
+    \item As you know, there aren't really variables in assembly language.
+    \item There are registers, and memory, where we keep values.
+    \item In XSPIM, the registers are listed in the top pane, and values in
+      memory can be found in the \texttt{Data Segments} pane.
+    \item In SPIM, use the \texttt{p(rint)} command to print values in registers
+      or memory.
+  \end{itemize}
+}
+
+\section{Example}
+
+\frame{
+  \frametitle{Example}
+
+  \begin{itemize}
+    \item A simple program to calculate and display the Fibonacci sequence.
+    \item But it doesn't quite work ...
+  \end{itemize}
+}
+
+\section*{Questions?}
+
+\frame{\frametitle{Questions?}}
+
+\end{document}

@@ -1,0 +1,211 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+
+\useinnertheme{rectangles}
+\useoutertheme{infolines}
+\usecolortheme{crane}
+\usefonttheme{structurebold}
+
+\title{Welcome to the Lab}
+\author[CMPUT 229]{CMPUT 229}
+\institute{University of Alberta}
+\date{Fall 2012}
+
+\begin{document}
+\frame{\titlepage}
+
+\frame{
+  \frametitle{Outline}
+  \tableofcontents
+}
+
+\section{About the Lab}
+
+\frame{
+  \frametitle{The Lab}
+
+ 
+
+  \begin{itemize}
+    \item The lab sessions are mostly time for you to work.  Attendance is not
+      mandatory.
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{The Lab}
+
+ 
+
+  \begin{itemize}
+    \item The lab sessions are mostly time for you to work.  Attendance is not
+      mandatory.
+    \item Your TAs are available during the lab sessions.  Ask us questions if
+      you have them!
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{The Lab}
+
+ 
+
+  \begin{itemize}
+    \item The lab sessions are mostly time for you to work.  Attendance is not
+      mandatory.
+    \item Your TAs are available during the lab sessions.  Ask us questions if
+      you have them!
+    \item There will sometimes be presentations (like this).  We will let you
+      know in advance when these are.
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{The Lab}
+
+ 
+
+  \begin{itemize}
+    \item The lab sessions are mostly time for you to work.  Attendance is not
+      mandatory.
+    \item Your TAs are available during the lab sessions.  Ask us questions if
+      you have them!
+    \item There will sometimes be presentations (like this).  We will let you
+      know in advance when these are.
+    \item You can attend any lab section, but registered students always have
+      priority.
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{What Will We Be Doing?}
+
+  \begin{itemize}
+    \item In short: assembly language programming for the MIPS architecture.
+    \item But writing assembly for real hardware is hard:
+      \begin{itemize}
+        \item You have to interface with the operating system, or write lots of
+          low-level code to manage the hardware yourself.
+        \item Testing and debugging requires special equipment and is difficult.
+      \end{itemize}
+    \item So we use a simulator: SPIM.
+  \end{itemize}
+}
+
+\section{SPIM and XSPIM}
+
+\frame{
+  \frametitle{What is SPIM?}
+
+  \begin{itemize}
+    \item SPIM is MIPS backwards!
+    \item It's a MIPS simulator.
+    \item It gives you an easy environment in which to run and debug your MIPS
+      code.
+    \item XSPIM is a graphical interface to SPIM.
+    \item There's more information in appendix B of the textbook.
+  \end{itemize}
+
+  \pause
+
+  Some things to remember:
+
+  \begin{itemize}
+    \item SPIM uses the endianness of the host machine.
+    \item SPIM is not a cycle-accurate simulator: it doesn't accurately simulate
+      cache, memory latency, floating-point operations, etc.  You can't tell how
+      efficient your MIPS code is by running it in SPIM.
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Pseudo-Instructions}
+
+  \begin{itemize}
+    \item SPIM implements some pseudo-instructions that expand into real
+      instructions.  When you run code, you might see instructions you didn't
+      write.  For example:
+
+      \vspace{0.5em}
+
+      \begin{center}
+        \begin{tabular}{l|l}
+          What you wrote&What you see in SPIM\\
+          \hline
+          \texttt{li \$t0, 10}&\texttt{ori \$8, \$0, 10}\\
+          \texttt{move \$v0, \$t0}&\texttt{addu \$2, \$0, \$8}
+        \end{tabular}
+      \end{center}
+
+      \vspace{0.5em}
+
+    \item Pseudo-instructions will do what you intend, so they're nothing to
+      worry about.  Just be aware that they may expand to multiple instructions,
+      and don't be surprised when you see them.
+  \end{itemize}
+}
+
+\section{Using XSPIM}
+
+\frame{
+  \frametitle{Basic XSPIM Usage}
+
+  \begin{itemize}
+    \item Run \texttt{xspim} from a terminal.
+    \item Press the ``load'' button, type in a filename, and click ``assembly
+      file'' to load a file.
+    \item Press the ``run'' button and then click ``ok'' to run your program.
+    \item If your program needs input or prints output, XSPIM will pop up a
+      terminal.  {\bf Closing this terminal will kill XSPIM.}
+    \item Press the ``quit'' button to quit.
+  \end{itemize}
+}
+
+\section{Using SPIM}
+
+\frame{
+  \frametitle{Basic SPIM Usage}
+
+  \begin{itemize}
+    \item Start \texttt{spim} in a terminal.
+    \item Type \texttt{load ``file.s''} to load your program.
+    \item Type \texttt{run} to run your program.
+    \item If your program needs input or prints output, it will appear in the
+      terminal.
+    \item Type \texttt{exit} to quit.
+      
+      \vspace{0.5em}
+    \item You can always type \texttt{?} to get help!
+  \end{itemize}
+}
+
+\section{Assignment Tips}
+
+\frame{
+  \frametitle{Assignment Tips for CMPUT 229}
+
+  \begin{itemize}
+    \item Read specifications very carefully.  Pay special attention to what you
+      are to include - sometimes we don't want a \texttt{main} method.
+    \item Even if you don't finish an assignment, make sure you submit something
+      that loads and runs.
+    \item Test your assignments on the lab machines before you submit.  That's
+      where we'll be marking them.
+    \item For most assignments, the marksheet will be posted in advance.  Look
+      at it to get an idea of what's important.
+    \item Style marks are easy marks.  Format your code like the
+      \texttt{example.s} file we provide, and write good comments.
+    \item With moodle (eClass) you can submit as many times as you like.  Submit early and
+      often (e.g. every time you get part of the assignment working).  We don't
+      accept any late submissions!
+  \end{itemize}
+}
+
+\section{Questions?}
+
+\frame{
+  \frametitle{Questions?}
+}
+
+\end{document}

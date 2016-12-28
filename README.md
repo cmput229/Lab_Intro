@@ -7,7 +7,7 @@ To make it easier to write and run SPIM code on your home machine, you can insta
 
 ![XSPIM Main Window](resources/imgs/mainWin.png)
 
-Next, let's run our first MIPS program. First, close xspim and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
+Next, let's run our first MIPS program. First, close XSPIM and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
 
 ![Load First](resources/imgs/loadFirst.png)
 
@@ -73,9 +73,9 @@ You only need to handle a single integer.
 
 ## Resources
 * Example showing how to format your code is here: [example.s](resources/code/example.s).
-* Slides used for in-class introduction of the lab ([.pdf](slides/Lab_Intro_Class_pres.pdf))
-* Slides used for in-lab introduction of the lab ([.pdf](slides/Lab_Intro-Lab_pres.pdf))
-* Slides used to demonstrate debugging in the lab ([.pdf](slides/Lab_Intro-Lab_debugging.pdf))
+* Slides used for in-class introduction of the lab ([.pdf](resources/slides/Lab_Intro_Class_pres.pdf))
+* Slides used for in-lab introduction of the lab ([.pdf](resources/slides/Lab_Intro-Lab_pres.pdf))
+* Slides used to demonstrate debugging in the lab ([.pdf](resources/slides/Lab_Intro-Lab_debugging.pdf))
 * Version of the program with bugs: [lab1-pres-buggy.s](resources/code/lab1-pres-buggy.s)
 * Corrected version of the program: [lab1-pres-correct.s](resources/code/lab1-pres-correct.s)
 

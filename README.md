@@ -94,5 +94,5 @@ There are 3 files to submit for this assignment.
 
 Submit these files using the link provided in the course eClass page.
 
-[lab1-first.s]: (resources/code/lab1-first.s)
+[lab1-first.s]: resources/code/lab1-first.s
 [lab1-broken.s]: resources/code/lab1-broken.s

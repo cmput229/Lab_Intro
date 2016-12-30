@@ -13,7 +13,7 @@ To make it easier to write and run SPIM code on your home machine, you can insta
 Next, let's run our first MIPS program. First, close XSPIM and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
 
 <p align="center">
-  ![Load First](resources/imgs/loadFirst.png)
+  <img alt="Load First" src="resources/imgs/loadFirst.png" />
 </p>
 This is also a good time to note that you should never close any of XSPIM's popups except by using the `abort command` button. Trying to close a popup will cause all of XSPIM to error and terminate. Next, click `run`. A console should pop open with its output. Congratulations! you've just run your first MIPS assembly program.
 
@@ -22,7 +22,7 @@ This is also a good time to note that you should never close any of XSPIM's popu
 Next, lets understand what's going on when the program runs. Press `reload -> assembly file` to wipe out the memory and registers changed and setup for next run, then press step.
 
 <p align="center">
-  ![Step](resources/imgs/step.png)
+  <img alt="Step" src="resources/imgs/step.png" />
 </p>
 
 When stepping through the assembly code, each instruction executed is printed at the bottom of XSPIM's main window, and the registers and data show you the internal state of the software. Changing the number of steps causes each press of the `step` button to jump forward that many instructions. Pressing `continue` causes the program to execute as if you had pressed `run`. You can step through the program now, observing how the registers change.
@@ -38,7 +38,7 @@ Stepping through one more time, watch for each execution of the load word (`lw`)
 Open up [lab1-first.s] in your favorite text editor. In the data segment, the string `Number = ` is a string whose address is the label `str`. In XSPIM, while looking at the data segment find the string `Number` in memory. You may want to use an ASCII table to help identify the characters. An ASCII table is available [here](http://www.asciitable.com).
 
 <p align="center">
-  ![Data Segments](resources/imgs/dataAddr.png)
+  <img alt="Data Segments" src="resources/imgs/dataAddr.png" />
 </p>
 
 SPIM assumes the endianness of the machine where it is running. In the lab machine, it means that SPIM is using a little-endian layout. In a little-endian layout, the least significant byte of a number is stored in the lowest address. See the image above to see how memory addresses map to individual bytes.

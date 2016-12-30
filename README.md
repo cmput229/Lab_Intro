@@ -5,9 +5,7 @@ XSPIM is a Graphical User Interface (GUI) for the SPIM MIPS Simulator. It provid
 
 To make it easier to write and run SPIM code on your home machine, you can install SPIM from [SourceForge](http://spimsimulator.sourceforge.net). Be warned though that all of your projects will be run on lab machines, which may not behave the exact same way as the version you install. An alternative more likely to maintain compatibility is from Mac or Linux to `ssh` to `ohaton.cs.ualberta.ca` with the `-X` flag, enabling X forwarding. For Windows, a similar effect can be achieved using PuTTY and Xming, though the process is more in-depth, and will not be discussed here. Whenever writing your code at home, you should always test your final solution on the lab machines before submitting.
 
-<p align="center">
-  ![XSPIM Main Window](resources/imgs/mainWin.png)
-</p>
+<img align="center" alt="XSPIM Main Window" src="resources/imgs/mainWin.png" />
 
 Next, let's run our first MIPS program. First, close XSPIM and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
 

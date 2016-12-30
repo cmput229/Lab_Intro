@@ -5,19 +5,24 @@ XSPIM is a Graphical User Interface (GUI) for the SPIM MIPS Simulator. It provid
 
 To make it easier to write and run SPIM code on your home machine, you can install SPIM from [SourceForge](http://spimsimulator.sourceforge.net). Be warned though that all of your projects will be run on lab machines, which may not behave the exact same way as the version you install. An alternative more likely to maintain compatibility is from Mac or Linux to `ssh` to `ohaton.cs.ualberta.ca` with the `-X` flag, enabling X forwarding. For Windows, a similar effect can be achieved using PuTTY and Xming, though the process is more in-depth, and will not be discussed here. Whenever writing your code at home, you should always test your final solution on the lab machines before submitting.
 
-![XSPIM Main Window](resources/imgs/mainWin.png)
+<p align="center">
+  ![XSPIM Main Window](resources/imgs/mainWin.png)
+</p>
 
 Next, let's run our first MIPS program. First, close XSPIM and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
 
-![Load First](resources/imgs/loadFirst.png)
-
+<p align="center">
+  ![Load First](resources/imgs/loadFirst.png)
+</p>
 This is also a good time to note that you should never close any of XSPIM's popups except by using the `abort command` button. Trying to close a popup will cause all of XSPIM to error and terminate. Next, click `run`. A console should pop open with its output. Congratulations! you've just run your first MIPS assembly program.
 
 **Question 1:** What was the output of the program?
 
 Next, lets understand what's going on when the program runs. Press `reload -> assembly file` to wipe out the memory and registers changed and setup for next run, then press step.
 
-![Step](resources/imgs/step.png)
+<p align="center">
+  ![Step](resources/imgs/step.png)
+</p>
 
 When stepping through the assembly code, each instruction executed is printed at the bottom of XSPIM's main window, and the registers and data show you the internal state of the software. Changing the number of steps causes each press of the `step` button to jump forward that many instructions. Pressing `continue` causes the program to execute as if you had pressed `run`. You can step through the program now, observing how the registers change.
 
@@ -31,7 +36,9 @@ Stepping through one more time, watch for each execution of the load word (`lw`)
 
 Open up [lab1-first.s] in your favorite text editor. In the data segment, the string `Number = ` is a string whose address is the label `str`. In XSPIM, while looking at the data segment find the string `Number` in memory. You may want to use an ASCII table to help identify the characters. An ASCII table is available [here](http://www.asciitable.com).
 
-![Data Segments](resources/imgs/dataAddr.png)
+<p align="center">
+  ![Data Segments](resources/imgs/dataAddr.png)
+</p>
 
 SPIM assumes the endianness of the machine where it is running. In the lab machine, it means that SPIM is using a little-endian layout. In a little-endian layout, the least significant byte of a number is stored in the lowest address. See the image above to see how memory addresses map to individual bytes.
 

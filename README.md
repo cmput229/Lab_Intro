@@ -9,7 +9,6 @@ To make it easier to write and run SPIM code on your home machine, you can insta
   <img alt="XSPIM Main Window" src="resources/imgs/mainWin.png" />
 </p>
 
-
 Next, let's run our first MIPS program. First, close XSPIM and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
 
 <p align="center">
@@ -88,7 +87,7 @@ You only need to handle a single integer.
 * Corrected version of the program: [lab1-pres-correct.s](resources/code/lab1-pres-correct.s)
 
 ## Marking Guide
-Here is the [mark sheet](MarkSheetPub.txt) used for grading. In particular, your submission will be evaluated for:
+Here is the [mark sheet](MarkSheet.txt) used for grading. In particular, your submission will be evaluated for:
 * answering questions correctly
 * correct bug fixes
 * correct functionality in simple program

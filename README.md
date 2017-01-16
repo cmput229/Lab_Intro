@@ -81,8 +81,8 @@ You only need to handle a single integer.
 ## Resources
 * Example showing how to format your code is here: [example.s](resources/code/example.s).
 * Slides used for in-class introduction of the lab ([.pdf](resources/slides/Lab_Intro_Class_pres.pdf))
-* Slides used for in-lab introduction of the lab ([.pdf](resources/slides/Lab_Intro-Lab_pres.pdf))
-* Slides used to demonstrate debugging in the lab ([.pdf](resources/slides/Lab_Intro-Lab_debugging.pdf))
+* Slides used for in-lab introduction of the lab ([.pdf](resources/slides/Lab_intro-Lab_pres.pdf))
+* Slides used to demonstrate debugging in the lab ([.pdf](resources/slides/Lab_intro-Lab_debugging.pdf))
 * Version of the program with bugs: [lab1-pres-buggy.s](resources/code/lab1-pres-buggy.s)
 * Corrected version of the program: [lab1-pres-correct.s](resources/code/lab1-pres-correct.s)
 

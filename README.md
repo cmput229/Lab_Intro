@@ -79,10 +79,11 @@ You only need to handle a single integer.
 **Question 10:** While this program only read and flipped a single integer, usually endianness conversions need to be done over entire blocks of memory.In this question, you are **not** asked to write assembly code. Consider that you have to write a subroutine that converts the endianness of several integer numbers. For example, your subroutine could receive three parameters: the address of a *source* memory block that contains the integers to be converted, the address of a *target* memory block where the converted integers should be placed, and the *number* of integers to be converted (*source* and *target* could be the same address if the endianness conversion is to be done in place). What control structure in assembly would you need to convert an entire block of integers, given that the number of integers to be converted will only be known at runtime?
 
 ## Resources
+
 * Example showing how to format your code is here: [example.s](resources/code/example.s).
-* Slides used for in-class introduction of the lab ([.pdf](resources/slides/Lab_Intro_Class_pres.pdf))
-* Slides used for in-lab introduction of the lab ([.pdf](resources/slides/Lab_intro-Lab_pres.pdf))
-* Slides used to demonstrate debugging in the lab ([.pdf](resources/slides/Lab_intro-Lab_debugging.pdf))
+* Slides used for in-class introduction of the lab ([.pdf](resources/slides/class.pdf))
+* Slides used for in-lab introduction of the lab ([.pdf](resources/slides/lab.pdf))
+* Slides used to demonstrate debugging in the lab ([.pdf](resources/slides/lab-debugging.pdf))
 * Version of the program with bugs: [lab1-pres-buggy.s](resources/code/lab1-pres-buggy.s)
 * Corrected version of the program: [lab1-pres-correct.s](resources/code/lab1-pres-correct.s)
 

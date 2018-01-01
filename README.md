@@ -100,7 +100,7 @@ There are 3 files to submit for this assignment.
 * `bugs.txt`: should contain descriptions of bugs found in [lab1-broken.s].
 * `lab1.s`: should contain the assembly program you wrote in the last step.
 
-Submit these files using the link provided in the course eClass page.
+Submit these files using the link provided in the course eClass page. Your solution MUST include the [CMPUT 229 Student Submission License](LICENSE.md) at the top of the file containing your solution and you must include your name in the appropriate place in the license text.
 
 [lab1-first.s]: resources/code/lab1-first.s
 [lab1-broken.s]: resources/code/lab1-broken.s

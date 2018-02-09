@@ -97,7 +97,7 @@ Here is the [mark sheet](MarkSheet.txt) used for grading. In particular, your su
 * program style
 
 ## Submission
-There are 3 files to submit for this assignment.
+There are 3 files to submit for this assignment. They should be committed to the root of your private repo.
 * `lab1.txt`: should contain answers to the questions on this page.
 * `bugs.txt`: should contain descriptions of bugs found in [lab1-broken.s].
 * `lab1.s`: should contain the assembly program you wrote in the last step.

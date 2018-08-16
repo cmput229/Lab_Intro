@@ -32,7 +32,7 @@ When stepping through the assembly code, each instruction executed is printed at
 
 Stepping through one more time, watch for each execution of the load word (`lw`) instruction.
 
-**Question 4:** How many times is load word executed, and what values are loaded?
+**Question 4:** How many times is load word executed, and what values are loaded? You may disregard the very first occurrence of a load word instruction, because that is not part of `lab1-first.s`.
 
 Open up [lab1-first.s] in your favorite text editor. In the data segment, the string `Number = ` is a string whose address is the label `str`. In XSPIM, while looking at the data segment find the string `Number` in memory. You may want to use an ASCII table to help identify the characters. An ASCII table is available [here](http://www.asciitable.com).
 
@@ -76,7 +76,9 @@ In this part of the assignment, you will write your first MIPS assembly program.
 
 You only need to handle a single integer.
 
-**Question 10:** While this program only read and flipped a single integer, usually endianness conversions need to be done over entire blocks of memory.In this question, you are **not** asked to write assembly code. Consider that you have to write a subroutine that converts the endianness of several integer numbers. For example, your subroutine could receive three parameters: the address of a *source* memory block that contains the integers to be converted, the address of a *target* memory block where the converted integers should be placed, and the *number* of integers to be converted (*source* and *target* could be the same address if the endianness conversion is to be done in place). What control structure in assembly would you need to convert an entire block of integers, given that the number of integers to be converted will only be known at runtime?
+Your program must output only the converted integer, and no other unspecified characters (such as input prompts or newline characters). If your program fails to comply, the automated marking scripts will consider your output wrong.
+
+**Question 10:** While this program only read and flipped a single integer, usually endianness conversions need to be done over entire blocks of memory. In this question, you are **not** asked to write assembly code. Consider that you have to write a subroutine that converts the endianness of several integer numbers. For example, your subroutine could receive three parameters: the address of a *source* memory block that contains the integers to be converted, the address of a *target* memory block where the converted integers should be placed, and the *number* of integers to be converted (*source* and *target* could be the same address if the endianness conversion is to be done in place). What control structure in assembly would you need to convert an entire block of integers, given that the number of integers to be converted will only be known at runtime?
 
 ## Resources
 
@@ -95,12 +97,16 @@ Here is the [mark sheet](MarkSheet.txt) used for grading. In particular, your su
 * program style
 
 ## Submission
-There are 3 files to submit for this assignment.
+There are 3 files to submit for this assignment. They should be committed to the root of your private repo.
 * `lab1.txt`: should contain answers to the questions on this page.
 * `bugs.txt`: should contain descriptions of bugs found in [lab1-broken.s].
 * `lab1.s`: should contain the assembly program you wrote in the last step.
 
-**Please make sure that you follow the link provided in the course eClass page for this lab assignment to get your own private GitHub repo for this lab. To ensure that we have the latest version of your solution, make sure to commit your changes to the repo frequently. Otherwise, you may forget to commit your latest changes by the deadline (which will count as a late lab, and will not be graded). Your solution will be automatically collected via GitHub Classroom by the deadline. Your solution MUST include the [CMPUT 229 Student Submission License](LICENSE.md) at the top of the file containing your solution and you must include your name in the appropriate place in the license text.**
+**Please make sure that you follow the link provided in the course eClass page for this lab assignment to get your own private GitHub repo for this lab. When prompted, make sure to link your GitHub account to your UAlberta ID, otherwise the teaching staff will not be able to grade your submission. If you do not recall whether or not you have previously linked your account, contact the teaching staff before the submission deadline.**
+
+**To ensure that we have the latest version of your solution, make sure to commit your changes to the repo frequently. Otherwise, you may forget to commit your latest changes by the deadline (which will count as a late lab, and will not be graded). Your solution will be automatically collected via GitHub Classroom by the deadline.**
+
+**Every file you commit to the repository MUST include the [CMPUT 229 Student Submission License](LICENSE.md) text at the very top, and you must include your name in the appropriate place in the license text. Make sure to comment out the license text if you are adding it to a code file (e.g., `lab1.s`), otherwise, your code will not compile or run. Failing to comply will render your submission inadmissible for grading.**
 
 [lab1-first.s]: resources/code/lab1-first.s
 [lab1-broken.s]: resources/code/lab1-broken.s

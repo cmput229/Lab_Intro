@@ -26,9 +26,9 @@ Next, lets understand what's going on when the program runs. Press `reload -> as
 
 When stepping through the assembly code, each instruction executed is printed at the bottom of XSPIM's main window, and the registers and data show you the internal state of the software. Changing the number of steps causes each press of the `step` button to jump forward that many instructions. Pressing `continue` causes the program to execute as if you had pressed `run`. You can step through the program now, observing how the registers change.
 
-**Question 2:** What is the maximum value, in hex, of register `$s0` during the execution of this program?
+**Question 2:** What is the maximum value, in hex, of register `$t0` during the execution of this program?
 
-**Question 3:** What is the value of the PC immediately before the execution of the instruction that increments register `$s0` to its maximum value?
+**Question 3:** What is the value of the PC immediately before the execution of the instruction that increments register `$t0` to its maximum value?
 
 Stepping through one more time, watch for each execution of the load word (`lw`) instruction.
 

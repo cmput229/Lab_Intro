@@ -46,13 +46,13 @@
           \texttt{.globl} directive. 
       \end{itemize}
     \item Look up the address of the instruction you want to break on in the
-      \texttt{Text Segments} pane in XSPIM.
+      \texttt{Text Segments} pane in QTSPIM.
     \item See all the global symbols by choosing \texttt{global symbols} in the
-      \texttt{print} menu in XSPIM.
+      \texttt{print} menu in QTSPIM.
     \item Use the \texttt{p(rint)} command to show instructions in SPIM.
     \item Use the \texttt{print\_symbols} command to show global symbols in SPIM.
 
-    \item Set a breakpoint using the \texttt{breakpoints} button in XSPIM, or
+    \item Set a breakpoint by right clicking on the instruction QTSPIM, or
       the \texttt{breakpoint} command in SPIM.
   \end{itemize}
 }
@@ -61,8 +61,7 @@
   \frametitle{Stepping in SPIM}
 
   \begin{itemize}
-    \item Click \texttt{step} and enter the number of instructions to execute in
-      XSPIM.
+    \item Click the ``Single Step'' button in QTSPIM.
     \item Use the \texttt{s(tep)} command in SPIM.
       \begin{itemize}
         \item Just hit enter to repeat the last command -- handy when
@@ -77,7 +76,7 @@
   \begin{itemize}
     \item As you know, there aren't really variables in assembly language.
     \item There are registers, and memory, where we keep values.
-    \item In XSPIM, the registers are listed in the top pane, and values in
+    \item In QTSPIM, the registers are listed in the left pane, and values in
       memory can be found in the \texttt{Data Segments} pane.
     \item In SPIM, use the \texttt{p(rint)} command to print values in registers
       or memory.

@@ -6,25 +6,17 @@ QTSPIM is a Graphical User Interface (GUI) for the SPIM MIPS Simulator. It provi
 To make it easier to write and run SPIM code on your home machine, you can install SPIM and QTSPIM from [SourceForge](http://spimsimulator.sourceforge.net). Be warned though that all of your projects will be run on lab machines, which may not behave the exact same way as the version you install. An alternative more likely to maintain compatibility is from Mac or Linux to `ssh` to `ohaton.cs.ualberta.ca` with the `-X` flag, enabling X forwarding. For Windows, a similar effect can be achieved using PuTTY and Xming, though the process is more in-depth, and will not be discussed here. Whenever writing your code at home, you should always test your final solution on the lab machines before submitting.
 
 <p align="center">
-  <img alt="XSPIM Main Window" src="resources/imgs/mainWin.png" />
+  <img alt="QTSPIM Main Window" src="resources/imgs/mainWin.png" />
 </p>
 
-Next, let's run our first MIPS program. First, close QTSPIM and download [lab1-first.s]. Navigate your terminal to the folder with the file you just downloaded, and launch XSPIM again. Click load and the window shown below will appear. Type in `lab1-first.s` and press `assembly file`. This causes the assembly file to be loaded into XSPIM.
+Next, let's run our first MIPS program. First, close QTSPIM and download [lab1-first.s]. Launch QTSPIM again. Click File>Load File and the choose the file you just downloaded. It is generally a good idea to click the Clear Registers button before running a program.
 
-<p align="center">
-  <img alt="Load First" src="resources/imgs/loadFirst.png" />
-</p>
-This is also a good time to note that you should never close any of XSPIM's popups except by using the `abort command` button. Trying to close a popup will cause all of XSPIM to error and terminate. Next, click `run`. A console should pop open with its output. Congratulations! you've just run your first MIPS assembly program.
 
 **Question 1:** What was the output of the program?
 
-Next, lets understand what's going on when the program runs. Press `reload -> assembly file` to wipe out the memory and registers changed and setup for next run, then press step.
+Next, lets understand what's going on when the program runs. Press the Clear Registers button to wipe out the memory and registers changed and setup for next run, then press the Single Step button.
 
-<p align="center">
-  <img alt="Step" src="resources/imgs/step.png" />
-</p>
-
-When stepping through the assembly code, each instruction executed is printed at the bottom of QTSPIM's main window, and the registers and data show you the internal state of the software. Changing the number of steps causes each press of the `step` button to jump forward that many instructions. Pressing `continue` causes the program to execute as if you had pressed `run`. You can step through the program now, observing how the registers change.
+When stepping through the assembly code, each instruction executed is highlighted in QTSPIM's Text Segment window, and the registers and data show you the internal state of the software, with register changes highlighted in red. Pressing `run` causes the program to execute from the current step. You can step through the program now, observing how the registers change.
 
 **Question 2:** What is the maximum value, in hex, of register `$t0` during the execution of this program?
 
@@ -51,7 +43,7 @@ Data in memory have no inherent meaning, meaning is given solely by context. As 
 **Question 7:** What would these four bytes represent if they were interpreted as a two's complement integer?
 
 ## Directives
-If you already have something loaded in QTSPIM, press `clear -> memory and registers` before downloading [lab1-directives.s](resources/code/lab1-directives.s) and loading it into QTSPIM. This assembly file doesn't actually do anything but quit, though it shows off many of the available data directives in MIPS. Open up the file in your text editor.
+If you already have something loaded in QTSPIM, press the Clear Registers button before downloading [lab1-directives.s](resources/code/lab1-directives.s) and loading it into QTSPIM. This assembly file doesn't actually do anything but quit, though it shows off many of the available data directives in MIPS. Open up the file in your text editor.
 
 **Question 8:** For each directive (statement beginning with a period) between `.data` and `.text`, give a brief description of its purpose and where it places data in SPIM's memory when loaded (if applicable).
 

@@ -44,8 +44,8 @@ Part 4: Program Style
  _____ /20
  
 Some common deductions will include: (5 marks per deduction)
-	No subroutine description
-	No program header
-	No explanation for register usage
-	No block comments
+	No subroutine description (see lines 16--19, 54--56 resources/code/example.s)
+	No program header (lines 4--13)
+	No explanation for register usage (lines 21--24, 63--68)
+	No block comments (lines 36--37)
 

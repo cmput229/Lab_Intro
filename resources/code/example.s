@@ -5,7 +5,7 @@
 # Assignment:           1
 # Due Date:             January 15, 2000
 # Name:                 John Doe
-# Unix ID:              johnd
+# CCID:                 johnd
 # Lecture Section:      B1
 # Instructor:           John Smith
 # Lab Section:          L3 (Tuesday 0000 - 0300)

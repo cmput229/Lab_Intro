@@ -9,7 +9,7 @@ Part 2:         _____ /20 Bugfixes
 
 Part 3:         _____ /20 Program
 
-Part 4:		_____ /15 Program Style
+Part 4:		_____ /20 Program Style
 
 -------------------------------------------------------------------------
 Part 1: Questions
